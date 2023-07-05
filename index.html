@@ -20,11 +20,15 @@
         <nav id="navbar">
             <div class="container">
                 <h1 class="logo"><a href="index.html">HTT</a></h1>
-                <ul>
+                <ul class="ul">
                     <li><a class="current" href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars adds active"></i>
+                    <i class="fa-solid fa-xmark removes"></i>
+                </div>
             </div>
         </nav>
         <div id="showcase">
@@ -46,6 +50,35 @@
         </div>
 
     </header>
+
+    <section id="book">
+        <div class="container">
+            <div class="input">
+                <div class="box">
+                    <label>Check-in:</label>
+                    <input type="date" placeholder="Check-in-Date">
+                </div>
+                <div class="box">
+                    <label>Check-out:</label>
+                    <input type="date" placeholder="Check-out-Date">
+                </div>
+                <div class="box">
+                    <label>Adults:</label> <br>
+                    <input type="number" placeholder="0">
+                </div>
+                <div class="box">
+                    <label>Children:</label> <br>
+                    <input type="number" placeholder="0">
+                </div>
+                <div class="booking">
+                    <a href="./contact.html">
+                        <button type="submit" class="btn">Booking</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <section id="home-info" class="bg-dark">
         <div class="info-img"></div>
@@ -85,6 +118,14 @@
         <p>Hotel TT &copy; 2023, All Right Reserved</p>
     </footer>
 
+    <script>
+        const ul = document.getElementsByClassName("ul")
+        const add = document.getElementsByClassName("adds")
+        const remove = document.getElementsByClassName("remove")
+        add.onclick = () => {
+            console.log("helo")
+        }
+    </script>
 </body>
 
 </html>
